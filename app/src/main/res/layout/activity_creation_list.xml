@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ms.dob.photocollage.activity.CreationListActivity">
+    <ImageView
+        android:id="@+id/iv_back"
+
+        android:layout_width="wrap_content"
+        android:layout_height="?actionBarSize"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/ic_back"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="@android:color/white"
+        android:text="My Creation"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="center"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/ry_creationlist"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_title"
+        app:layout_constraintBottom_toTopOf="@+id/ry_adcontainer"
+        tools:listitem="@layout/item_creationlist"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:spanCount="2"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"/>
+    <TextView
+        android:id="@+id/tv_empty"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_title"
+        app:layout_constraintBottom_toTopOf="@+id/ry_adcontainer"
+        android:text="No Creation yet."
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-medium"
+        android:visibility="gone"/>
+    <RelativeLayout
+        android:id="@+id/ry_adcontainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <RelativeLayout
+            android:id="@+id/ad_default_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@android:color/white">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="sans-serif-smallcaps"
+                android:gravity="center"
+                android:text="Space for ad"
+                android:textColor="@android:color/black" />
+        </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/ly_adcontainer_creationlist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

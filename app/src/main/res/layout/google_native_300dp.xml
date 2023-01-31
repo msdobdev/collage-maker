@@ -1,0 +1,24 @@
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<com.google.android.gms.ads.nativead.NativeAdView-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content">-->
+<!--    <LinearLayout-->
+<!--        android:orientation="vertical"-->
+<!--    ... >-->
+<!--    <LinearLayout-->
+<!--        android:orientation="horizontal"-->
+<!--    ... >-->
+<!--    <ImageView-->
+<!--        android:id="@+id/ad_app_icon"-->
+<!--    ... />-->
+<!--    <TextView-->
+<!--        android:id="@+id/ad_headline"-->
+<!--    ... />-->
+<!--</LinearLayout>-->
+
+
+<!--    // Other assets such as image or media view, call to action, etc follow.-->
+<!--    ...-->
+<!--    </LinearLayout>-->
+<!--    </com.google.android.gms.ads.nativead.NativeAdView>-->
